@@ -11,9 +11,9 @@ addButton.addEventListener("click", function(e){
     listItem.appendChild(text);
     list.appendChild(listItem);
     input.value="";
-   listContainer.addEventListener("dblclick", function(){
-       text.removeChild(text);
-   }) 
+    listItem.addEventListener("dblclick", function(){
+        list.removeChild(listItem);
+    }) 
 })
 
 
